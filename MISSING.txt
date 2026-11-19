@@ -1,0 +1,11 @@
+Files that index.html / sw.js / server.js expect but were NOT in the upload.
+Copy them from your own project into the same places, then run: node server.js
+
+  js/auth.js        (login / sync client; index.html loads it)
+  js/notify.js      (push reminders; index.html loads it)
+  icon.svg          (also icon-192.png / icon-512.png if you use them)
+  admin.html + js/admin.js, download.html   (optional pages)
+  deploy/, tests/   (optional)
+
+sw.js pre-caches js/auth.js and js/notify.js: if they are missing, the service worker install fails.
+New in this zip: js/book.js (17 units from the Yeni Istanbul A1 word lists), registered in index.html and sw.js (cache tri-v19).
